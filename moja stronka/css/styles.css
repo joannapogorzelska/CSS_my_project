@@ -1,0 +1,413 @@
+*{
+margin: 0;
+padding: 0;
+
+}
+html {
+     --myBlue:rgb(210, 244, 255);
+     --shadesOfGrey:rgba(255, 255, 255, 0.5);
+   }
+body {
+  font-size: 10px;
+  font-family: 'Yaldevi', sans-serif;
+}
+div .wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+div .nav {
+  height: 1.5rem;
+}
+div .nav nav {
+  display: block;
+  text-align: center;
+  background-color: white;
+  position: fixed;
+  margin-left: 9%;
+  width: 82%;
+  margin-top:0.5rem;
+}
+div .nav nav a {
+  display: inline-block;
+  color: skyblue;
+  text-transform: uppercase;
+  font-size: 0.5rem;
+  text-decoration: none;
+  padding-left: 0.5rem;
+  transition: 1s;
+  letter-spacing: 1px;
+}
+div .nav nav a:first-child{
+  padding-left: 0;
+}
+
+div .nav nav a:hover {
+  background-color: skyblue;
+  color: blue
+}
+
+div header{
+  position: relative;
+  display: block;
+  height: 20vh;
+  background-image: url("../img/padThai742.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 3% 10% 0 10%;
+}
+div header h1{
+  top: 40%;
+  padding: 0;
+  font-size: 2rem;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  background-color: var(--shadesOfGrey);
+  color: #555;
+}
+div .searchDesktop {
+  display: none;
+}
+div .search {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  text-align: right;
+  margin-right: 10%;
+}
+main{
+  margin: 5% 5% 0% 5%;
+}
+main section h2{
+  margin-top: 2%;
+  font-size: 1.5rem;
+}
+.feature{
+  text-align: center; 
+}
+
+div .feature img{
+ width: 90%;
+  margin-top: 2%;
+  margin-bottom: 1%;
+  max-width: 384px;
+}
+div .feature a{
+  display: inline-block;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: 0.5s;
+  color: black;
+}
+div .feature a:hover{
+background-color: aquamarine;
+}
+div .feature p{
+margin-right: 5%;
+margin-left: 5%;
+ font-size: 1rem;
+text-align: justify;
+}
+div .article{
+  margin-top: 2%;
+  margin-left:5%;
+  margin-right:5%;
+}
+div div .box article {
+  text-align: center;
+  background-color:var(--myBlue);
+  margin-bottom:1%
+}
+article>h2{
+
+  margin-left: 5%;
+  text-align: center;
+}
+article>p{
+  font-size: 1rem;
+ margin-top: 1rem;
+ margin-left: 5%;
+ margin-right: 5%;
+  text-align: justify;
+  line-height: 2;
+}
+.clearfix::after{
+  display: block;
+  content: "";
+  clear: both;
+}
+article a img {
+
+ width: 90%;
+ margin-top: 2%;
+ margin-bottom: 1%;
+ max-width: 384px;
+}
+aside{
+  margin-top: 5%;
+  margin-bottom:1%;
+  background-color:var(--myBlue);
+  text-align: center;
+  color:darkgray;
+    padding: 25px;
+}
+div .findme{
+  font-weight: 500;
+}
+div .findme li{
+  font-size: 1.2rem;
+}
+ul li a {
+  text-decoration: none;
+margin-left: 20px;
+color: darkgray;
+}
+li{
+  margin-bottom: 10px;
+}
+
+ul{
+list-style: none;
+}
+li a:hover{
+  background-color: white;
+}
+div .ad a img{
+width: 100%;
+}
+
+div .yt-video h1 {
+  margin-left:5%;
+  text-transform: uppercase;
+}
+iframe.yt{
+  margin: 2% 5% 5% 5%;
+  width: 90%;
+}
+
+div .about {
+
+  margin:1% 5%;
+  background-color:var(--myBlue);
+  position: relative;
+width: 90%;
+}
+div .about h1{
+  text-transform: uppercase;
+}
+div .about img{
+  position: absolute;
+
+  height: 80%;
+border-radius: 50%;
+right: 5%;
+bottom: 10%;
+}
+div .about p {
+  margin-right: 40%;
+}
+div .contact{
+  text-align: center;
+  text-transform: uppercase;
+  margin-left: 5%;
+  margin-bottom: 1rem;
+  width: 90%;
+  background-color: var(--myBlue);
+
+}
+div .contact h2{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+div .contact input, div .contact textarea, div .contact button {
+  width: 80%;
+  margin-bottom: 20px;
+  font-size: 12px;
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-bottom: 5px;
+}
+
+div .contact input{
+  height: 36px;
+}
+ input:focus {
+  border: 5px solid blue;
+}
+textarea:focus{
+  border:5px solid blue
+}
+div .contact textarea{
+  height: 120px;
+}
+div .contact button{
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+footer{
+  margin: 0 5% 0 5%;
+  font-size: 1rem;
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--myBlue);
+}
+
+@media(orientation: landscape) {
+  div .about p {
+    margin-right: 20%;
+  }
+
+  div .nav {
+    height: 2rem;
+
+  }
+
+  div .nav nav a {
+    display: inline-block;
+    color: skyblue;
+    font-size: 1rem;
+    text-decoration: none;
+    padding-left: 0.5rem;
+    transition: 1s;
+    letter-spacing: 1px;
+  }
+
+  div header {
+    height: 40vh;
+    margin-top: 1%;
+  }
+
+
+  article a img {
+
+    max-width: 384px;
+  }
+}
+
+@media  (min-width: 1024px){
+  div .searchDesktop {
+    display: block;
+    margin-left: 0%;
+    margin-top: 0.45%;
+    height: 1.5rem;
+    width: 10%;
+    float: left;
+    font-size: 1rem;
+  }
+
+  div .search {
+   display: none;
+  }
+
+  div header h1 {
+    top:0%;
+    padding: 0;
+    line-height: 40vh;
+    letter-spacing: 5px;
+    font-size: 5rem;
+opacity: 0;
+transition: 2s;
+  }
+    div header:hover h1{
+      opacity: 1;
+    }
+  div .nav nav {
+    float: left;
+    width: 90%;
+    margin-left: 5%;
+    text-align: right;
+  }
+div .nav nav a {
+  font-size: 1.5rem;
+}
+div header {
+  height: 40vh;
+  margin: 5% 5% 1% 5%;
+}
+main {
+  margin-left: 4%;
+  margin-right: 4%;
+  margin-top: 1%;
+}
+
+  div .feature{
+
+    float: left;
+    width: 33.3%;
+  }
+  div .feature img {
+    width: 95%;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    max-width: 384px;
+  }
+
+  div .feature a p {
+margin-left:2%;
+margin-right:2%;
+    font-size: 1rem;
+    text-align: justify;
+  }
+
+ div .box {
+    float: left;
+ width: 60%;
+ margin-right: 1%;
+  }
+  article>p {
+    font-size: 1rem;
+  }
+  .food{
+    float:left
+  }
+
+  article a img {
+    width: 70%;
+  }
+
+  aside {
+float: left;
+    width: 33.5%;
+    margin-top:0%;
+
+  }
+
+  div .findme {
+    font-size: 2rem;
+
+  }
+  div .ad a img {
+    width: 100%;
+  }
+div .yt-video{
+  text-align: center;
+}
+iframe.yt {
+
+height:80vh;
+  max-width: 1350px;
+  max-height:480px;
+}
+
+div .about img {
+  right: 2%;
+}
+
+div .about p {
+  font-size: 1.5rem;
+  margin-right: 10%;
+}
+
+div .contact input,
+div .contact textarea,
+div .contact button {
+  width: 50%;
+}
+div .contact button {
+  display: block;
+  margin-left: 65%;
+  width: 10%;
+  margin-bottom: 1rem;
+}
+
+}
